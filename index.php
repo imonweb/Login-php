@@ -15,6 +15,10 @@
   <link href="style.css" rel="stylesheet">
 
   <style>
+
+    .form-floating {
+      margin-bottom: .5rem;
+    }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -125,38 +129,76 @@
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="index-intro-c2">
-          <h2>We make<br>professional<br> gear</h2>
+          <h2>We make professional gear</h2>
           <a href="#"> FIND OUR GEAR HERE.</a>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="jumbotron"></div>
+
   <div class="container">
     <div class="row">
-       <main class="form-signin w-100 m-auto">
-      <form>
-        
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div>
+      <div class="col-6 col-sm-4">
 
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        <main class="form-signin w-100 m-auto">
+          <form action="includes/signup.inc.php" method="post">
+            <h1 class="h3 mb-3 fw-normal">SIGN UP</h1>
+            <p>Don't have an account yet? Sign up here!</p>
+            <div class="form-floating">
+              <input type="text" name="uid" class="form-control" id="floatingInput" placeholder="Username">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pwd">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+             <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Repeat Password" name="pwdrepeat">
+              <label for="floatingPassword">Repeat Password</label>
+            </div>
+
+             <div class="form-floating">
+              <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email">
+              <label for="floatingInput">E-mail</label>
+            </div>
+ 
+ 
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          
+          </form>
+        </main>
+      </div> <!--========= col-6 ==========-->
       
-      </form>
-    </main>
+      
+      
+      
+      <div class="col-6 col-sm-4">
+
+        <main class="form-signup w-100 m-auto">
+          <form action="includes/login.inc.php" method="post">
+            <h1 class="h3 mb-3 fw-normal">SIGN IN</h1>
+            <p>Don't have an account yet? Sign up here!</p>
+
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" name="uid" placeholder="Username">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" name="pwd" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+ 
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+          
+          </form>
+        </main>
+
+      </div> <!--========= col-6 ==========-->
+       
     </div> <!--========= row ==========-->
   </div> <!--========= container ==========-->
 
@@ -164,7 +206,7 @@
 
 
 
-  <section class="index-login">
+  <!-- <section class="index-login">
     <div class="wrapper">
         <div class="index-login-signup">
           <h4>SIGN UP</h4>
@@ -189,7 +231,7 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> -->
   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
